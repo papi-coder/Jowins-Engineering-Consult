@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jowins Engineering Consult</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Jowins Engineering Consult</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+ 
+<!-- Video Section with Cinematic Controls -->
+<section id="about-video" class="fade-section parallax-bg">
+  <div class="video-overlay"></div>
+  <div class="video-content">
+    <h2>Our Work in Action</h2>
+    <p>Watch how Jowins Engineering Consult brings innovation and precision to every project.</p>
+
+    <div class="video-wrapper">
+      <video id="projectVideo" autoplay muted loop playsinline>
+        <source src="videos/construction.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <!-- Custom Play/Pause Button -->
+      <button id="videoToggle" class="video-btn" aria-label="Play or Pause video">
+        <span class="icon">⏸</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Parallax Section 1 -->
+<section class="parallax" style="background-image: url('/images/img2.jpg');">
+  <div>
+    <h2>Engineering Excellence</h2>
+    <p>We design, plan, and deliver projects that stand as landmarks of modern construction and sustainable engineering.</p>
+  </div>
+</section>
+
+<!-- Parallax Section 2 -->
+<section class="parallax" style="background-image: url('/images/image1.jpg');">
+  <div>
+    <h2>Innovation in Every Build</h2>
+    <p>Our team combines creativity and precision to shape the future of infrastructure and design.</p>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="fade-section projects-section">
+  <h2 class="section-title">Our Signature Projects</h2>
+  <p class="section-subtitle">Delivering excellence in every structure — from foundation to finish.</p>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card" style="background-image: url('/images/img3.jpg');">
+      <div class="project-info">
+        <h3>High-Rise Corporate Tower</h3>
+        <p>Completed a 25-floor corporate skyscraper featuring eco-efficient design and smart lighting systems.</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" style="background-image: url('/images/img4.jpg');">
+      <div class="project-info">
+        <h3>Modern Residential Estate</h3>
+        <p>Designed and constructed luxury homes with sustainable materials and green rooftop systems.</p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card" style="background-image: url('/images/img5.jpg');">
+      <div class="project-info">
+        <h3>Industrial Plant Development</h3>
+        <p>Delivered a state-of-the-art factory with precision engineering and advanced safety systems.</p>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card" style="background-image: url('/images/img6.jpg');">
+      <div class="project-info">
+        <h3>Urban Bridge Construction</h3>
+        <p>Constructed a multi-lane urban bridge connecting city districts, enhancing regional infrastructure.</p>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card" style="background-image: url('/images/img7.jpg');">
+      <div class="project-info">
+        <h3>Smart Hospital Complex</h3>
+        <p>Built a 21st-century medical facility integrating smart sensors, solar energy, and ergonomic design.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="stats">
+  <div class="stat">
+    <h3 class="count" data-target="120">0</h3>
+    <p>Projects Completed</p>
+  </div>
+  <div class="stat">
+    <h3 class="count" data-target="75">0</h3>
+    <p>Happy Clients</p>
+  </div>
+  <div class="stat">
+    <h3 class="count" data-target="10">0</h3>
+    <p>Years of Excellence</p>
+  </div>
+  <div class="stat">
+    <h3 class="count" data-target="24">0</h3>
+    <p>Team Engineers</p>
+  </div>
+</section>
+
+
+<!-- =========================
+     Client Testimonials
+========================= -->
+<section id="testimonials" class="testimonials">
+  <h2>What Our Clients Say</h2>
+
+  <div class="testimonial-slider">
+    <div class="testimonial-card active">
+      <p>“Jowins Engineering Consult delivered our project ahead of schedule with outstanding quality and attention to detail.”</p>
+      <h4>- Mr. Kwame Boateng</h4>
+      <div class="stars">
+        ★★★★★
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>“Their professionalism and engineering precision exceeded expectations. Highly recommended for any construction project.”</p>
+      <h4>- Engr. Sarah Mensah</h4>
+      <div class="stars">
+        ★★★★★
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>“Excellent communication and execution. The entire team was proactive, ensuring every phase ran smoothly.”</p>
+      <h4>- Mr. Daniel Owusu</h4>
+      <div class="stars">
+        ★★★★☆
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Flexbox Services Preview -->
+<section class="flex-container">
+  <div class="flex-item" style="background-image: url('/images/img8.jpg');">
+    <div class="overlay"></div>
+    <h2>Structural Engineering</h2>
+    <p>Strong foundations for sustainable development.</p>
+  </div>
+
+  <div class="flex-item" style="background-image: url('/images/img9.jpg');">
+    <div class="overlay"></div>
+    <h2>Project Management</h2>
+    <p>Expert oversight ensuring excellence and efficiency.</p>
+  </div>
+
+  <div class="flex-item" style="background-image: url('/images/img10.jpg');">
+    <div class="overlay"></div>
+    <h2>Consultancy</h2>
+    <p>Professional advice to guide your vision into reality.</p>
+  </div>
+</section>
+
+
+  <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/233555123456?text=Hello%20Jowins%20Engineering%20Consult!%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn">↑</button>
+
+  <script src="script.js"></script>
+
+
+  <!-- Footer -->
+<footer class="footer glass">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>Jowins Engineering Consult</h3>
+      <p>Delivering quality engineering and construction services built on integrity, innovation, and excellence.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><strong>Email:</strong> winsongtijoseph@gmail.com</p>
+      <p><strong>Phone:</strong> +233 24 370 1614</p>
+      <p><strong>Address:</strong> Kumasi, Ghana</p>
+    </div>
+
+    <div class="footer-col social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Jowins Engineering Consult. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+// Fade-in effect
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeSections = document.querySelectorAll(".fade-section");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  fadeSections.forEach(section => observer.observe(section));
+});
+
+// Parallax motion
+window.addEventListener("scroll", () => {
+  const parallax = document.querySelector(".parallax-bg");
+  if (parallax) {
+    const offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * 0.4 + "px";
+  }
+});
+
+// Video play/pause toggle
+const video = document.getElementById("projectVideo");
+const toggleBtn = document.getElementById("videoToggle");
+const icon = toggleBtn.querySelector(".icon");
+
+toggleBtn.addEventListener("click", () => {
+  if (video.paused) {
+    video.play();
+    icon.textContent = "⏸";
+  } else {
+    video.pause();
+    icon.textContent = "▶️";
+  }
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
