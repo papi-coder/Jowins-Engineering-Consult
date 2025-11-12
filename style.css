@@ -1436,6 +1436,7 @@ header {
   width: 100%;
   z-index: 1000;
   background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--blur);
   backdrop-filter: var(--blur);
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
@@ -1504,6 +1505,7 @@ header {
     top: 0;
     right: -100%;
     background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--blur);
     backdrop-filter: var(--blur);
     height: 100vh;
     width: 70%;
@@ -1595,6 +1597,7 @@ header {
 ============================= */
 .footer {
   background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--blur);
   backdrop-filter: var(--blur);
   text-align: center;
   padding: 2rem 1rem;
@@ -1675,4 +1678,68 @@ header {
 @keyframes pop {
   0% { transform: scale(1); opacity: 1; }
   100% { transform: scale(3); opacity: 0; }
+}
+/* ========== Navbar Toggle ========== */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.open {
+  transform: rotate(90deg);
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ========== Dark / Light Theme ========== */
+body.dark {
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+body.dark .navbar {
+  background-color: rgba(20, 20, 20, 0.9);
+}
+
+body.dark .nav-links a {
+  color: #fff;
+}
+
+body.dark .nav-links a:hover {
+  color: #ffb300;
+}
+
+body.dark footer {
+  background: rgba(15, 15, 15, 0.95);
+  color: #ddd;
 }
